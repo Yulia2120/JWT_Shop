@@ -32,7 +32,7 @@ namespace JWT_Shop.Controllers
                 if (product.Count > 0)
                 {
                     productCache = product;
-                    var expirationTime = DateTimeOffset.Now.AddMinutes(3.0);
+                    var expirationTime = DateTimeOffset.Now.AddMinutes(5.0);
                     _cacheService.SetData("Product", productCache, expirationTime);
                 }
             }
