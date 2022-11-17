@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+      <section class="info my-5">
+          <div class="container" id="rowInfo" style="display:none;">
+              <div class="row">
+                  <div class="container-fluid d-flex h-100 justify-content-center align-items-center my-4">
+                      <div class="col-3" id="userInfo">
+                          <p class="text">
+                              Добро пожаловать <span id="userName"></span>!
+                          </p>
+                          <input type="button"
+                                 class="btn-info btn-default my-4"
+                                 value="Выйти"
+                                 id="logOut">
+                          <input type="submit"
+                                 class="btn-info btn-default"
+                                 id="getData"
+                                 value="Получить данные"></div>
+                  </div>
+              </div>
+          </div>
+          </section>
+          <section class="form my-5 mx-5">
+              <div class="container" id="contant">
+                  <div class="row g-0">
+                      <div class="col-lg-5">
+                          <img src="img/kartinka.jpg" class="img-fluid left_img" alt="model" />
+                      </div>
+                      <div class="col-lg-7 pt-5">
+                          <h1>Timon & Pumba</h1>
+                          <div id="shop">
+                              <h4>Pet Shop</h4>
+                          </div>
+                          <h4>Sign into your account</h4>
+                          <form name="formValid" id="formValid" class="formV">
+                              <div class="form-group">
+                                  <div class="col-lg-7">
+                                      <input type="email"
+                                             name="email"
+                                             id="email"
+                                             placeholder="Email"
+                                             class="form-control"
+                                             required />
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <div class="col-lg-7">
+                                      <input type="password"
+                                             name="password"
+                                             id="password"
+                                             placeholder="Password"
+                                             class="form-control"
+                                             required />
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <div class="col-lg-7">
+                                      <button type="submit" id="submitLogin" class="btn-default mb-4">Login</button>
+                                  </div>
+                              </div>
+                              <a href="#">Forgot password</a>
+                              <p>Don't have an account? <a href="#">Register here</a></p>
+                          </form>
+                     
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <script src="js/bootstrap.bundle.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+                  integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+                  crossorigin="anonymous"
+                  referrerpolicy="no-referrer"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+          <script src="js/script.js"></script>
+  </body>
+    </html>
