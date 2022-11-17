@@ -19,7 +19,7 @@ namespace JWT_Shop.Controllers
             {
                 return BadRequest("Invalid user request!!!");
             }
-            if (user.UserName == "tom@gmail.com" && user.Password == "12345")
+            if (user.UserName == "deep" && user.Password == "12345")
             {
                 var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(ConfigurationManager.AppSetting["JWT:Secret"]));
                 var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
